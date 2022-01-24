@@ -1,0 +1,17 @@
+<form (ngSubmit)="validForm(form)" #form="ngForm" class="display-login">
+  <h2>Dashboard la Nimes'alerie </h2>
+  <mat-form-field appearance="fill">
+  <mat-label>Nom d'utilisateur</mat-label>
+  <input matInput [(ngModel)]="email" name="email" required>
+</mat-form-field>
+<mat-form-field appearance="fill">
+    <mat-label>Mot de passe</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" [(ngModel)]="pass" name="password" required>
+    <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field> 
+  <p *ngIf="connexionFail">Identifiant Incorrect</p>
+  <button mat-raised-button>Connexion</button>
+
+</form>  

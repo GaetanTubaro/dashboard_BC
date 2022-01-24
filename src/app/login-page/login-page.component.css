@@ -1,0 +1,54 @@
+button{
+  border:none;
+  background: none;
+
+}
+.display-login{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  margin-top: 10em;
+}
+button[mat-raised-button]{
+  width: 50%;
+  margin: auto;
+  background: lightseagreen;
+  color: white;
+}
+
+h2{
+  margin: auto;
+  margin-bottom: 1em;
+}
+p{
+  border-radius: 5px;
+  background: rgb(241, 45, 45);
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.8em; 
+  box-shadow:  5px 5px 3px -5px rgba(0,0,0,0.6)
+}
+/* ----------------------------------------MEDIA------------------------------------------------------ */
+@media only screen and (max-width: 1000px) {
+  .display-login{
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .display-login{
+    width: 60%;
+  }
+  
+}
+@media only screen and (max-width: 380px) {
+  .display-login{
+    width: 70%;
+  }
+  
+}
+
+
