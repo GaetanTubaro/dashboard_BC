@@ -1,7 +1,57 @@
-<a routerLink="/login">Déconnexion
+<mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile>
+    <mat-card>
+  <mat-card-title>Recurrence</mat-card-title>
+  <mat-card-content>
+    <p>{{recurrence | percent}} </p>
+  </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+  <mat-card-title>abandonsPanier</mat-card-title>
+  <mat-card-content>
+    <p>{{abandonsPanier | percent}} </p>
+  </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+  <mat-card-title>convPanier</mat-card-title>
+  <mat-card-content>
+    <p>{{conversionsPanier | percent}} </p>
+  </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card>
+  <mat-card-title>convCommandes</mat-card-title>
+  <mat-card-content>
+   <p>{{conversionsCommandes | percent}} </p>
+  </mat-card-content>
+</mat-card> 
+  </mat-grid-tile>
+</mat-grid-list>
 
-</a>
-<p>Recurrence : {{recurrence | percent}} </p>
-<p>abandonsPanier : {{abandonsPanier | percent}} </p>
-<p>conversionsPanier : {{conversionsPanier | percent}} </p>
-<p>conversionsCommandes : {{conversionsCommandes | percent}} </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

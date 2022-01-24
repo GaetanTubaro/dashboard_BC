@@ -23,7 +23,7 @@ export class LoginPageComponent implements OnInit {
   validForm(form : NgForm){
      this.monServiceAuth.checkAuth(this.email, this.pass).then(res  =>{
        if(res){
-        this.router.navigate(["dashboard"]);
+        this.router.navigate(["dashboord"]);
        } else {
          this.connexionFail = true; 
        }

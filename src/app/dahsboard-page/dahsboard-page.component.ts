@@ -1,5 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { ApplicationInitStatus, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { lastValueFrom } from 'rxjs';
 import { ApiStatData } from '../models/types';
@@ -19,7 +19,7 @@ export class DahsboardPageComponent implements OnInit {
   constructor(private http : HttpClient, private authService : AuthService) { }
 
   ngOnInit(): void {
-    this.getAllStat()
+    
   }
   getAllStat(){
     let url = `https://g0lkzlavh1.execute-api.eu-west-3.amazonaws.com/dev/stats/2001/2021`;

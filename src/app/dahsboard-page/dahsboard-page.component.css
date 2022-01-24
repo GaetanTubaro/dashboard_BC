@@ -1,0 +1,17 @@
+mat-toolbar{
+    background: lightseagreen;
+    color: white;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-card{
+    padding: 1em;
+    color: white;
+    background: blueviolet;
+    width: 200px;
+}
+p {
+    color: white;
+    text-align: center; 
+}
